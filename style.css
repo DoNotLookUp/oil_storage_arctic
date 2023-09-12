@@ -1,5 +1,5 @@
 :root {
-  --map-elements-indent: 30px;
+  --elements-indent: 30px;
   --buttons-shadow: 0px 0px 20px rgba(0,0,0,.15);
 
   --header-height: 0px;
@@ -10,7 +10,7 @@
   --marker-border-width: 1px;
   --marker-border-color: black;
 
-  --map-button-size: 56px;
+  --map-button-size: 40px;
 
   --map-legend-width: 200px;
   --map-legend-text-size: 14px;
@@ -21,7 +21,7 @@
   --map-toggle-height: 24px;
   --map-toggle-radius: 15px;
   --map-toggle-bg-color: #969696;
-  --map-toggle-bg-color-on: #66cc00;
+  --map-toggle-bg-color-on: rgb(0, 119, 255);
   --map-toggle-dot-width: 18px;
   --map-toggle-dot-height: 18px;
   --map-toggle-dot-color: white;
@@ -97,11 +97,11 @@ body::after{
 .layer-control-open {
   display: none;
   background-image: url(icons/layers.svg);
-  background-size: 25px;
+  background-size: 20px;
 }
 .control-info {
   background-image: url(icons/info.svg);
-  background-size: auto;
+  background-size: 3px;
 }
 
 .layer-control-close {
@@ -228,16 +228,16 @@ input[type="radio"]:checked::before, input[type="checkbox"]:checked::before {
 }
 
 .leaflet-top {
-  top: var(--map-elements-indent);
+  top: var(--elements-indent);
 }
 .leaflet-right {
-  right: var(--map-elements-indent);
+  right: var(--elements-indent);
 }
 .leaflet-bottom {
-  bottom: var(--map-elements-indent);
+  bottom: var(--elements-indent);
 }
 .leaflet-left {
-  left: var(--map-elements-indent);
+  left: var(--elements-indent);
   z-index: 1001;
 }
 
